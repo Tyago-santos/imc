@@ -1,0 +1,115 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b0f19;
+}
+
+/* Container do Formulário - Aumentado */
+.form {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px; /* Cantos um pouco mais arredondados */
+  padding: 40px; /* Mais espaço interno */
+  width: 90%;
+  max-width: 480px; /* Largura máxima aumentada (era 380px) */
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.4),
+    0 10px 10px -5px rgba(0, 0, 0, 0.4);
+
+  width: 200%;
+}
+
+/* Título maior */
+.form h1 {
+  color: #f8fafc;
+  font-size: 32px; /* Tamanho do texto aumentado */
+  font-weight: 700;
+  margin-bottom: 28px; /* Mais espaço abaixo do título */
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+/* Campos de Entrada (Inputs) maiores */
+input {
+  background-color: #0f172a;
+  outline: none;
+  margin: 16px 0; /* Mais espaçamento entre os campos */
+  width: 100%;
+  display: block;
+  border: 1px solid #475569;
+  color: #f8fafc;
+  padding: 16px 20px; /* Inputs mais altos e largos por dentro */
+  border-radius: 10px;
+  font-size: 18px; /* Texto maior ao digitar */
+  transition: all 0.2s ease;
+}
+
+/* Efeito ao clicar no Input */
+input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
+}
+
+/* Placeholder maior */
+input::placeholder {
+  color: #64748b;
+  font-size: 17px;
+}
+
+/* Botão de Calcular maior */
+.btn {
+  background-color: #f8fafc;
+  color: #0f172a;
+  border: none;
+  padding: 16px; /* Botão mais alto */
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  font-size: 18px; /* Texto do botão maior */
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 24px; /* Mais espaço acima do botão */
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #e2e8f0;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Mensagem de Resultado maior */
+.warn_message {
+  color: #94a3b8;
+  margin-top: 28px;
+  text-align: center;
+  font-size: 18px; /* Resultado mais visível e destacado */
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+label {
+  color: #f8fafc;
+  font-size: 18px; /* Texto do label maior */
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px; /* Mais espaço abaixo do label */
+}
