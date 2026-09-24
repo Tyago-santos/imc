@@ -37,19 +37,19 @@ form.addEventListener("submit", function (e) {
     messageAlert(
       `${name.value}, seu imc é ${resultImc}<br> Abaixo do Peso <br> Precisa comer mais filho`,
     );
-  } else if (resultImc >= 18.5 && 24.9) {
+  } else if (resultImc >= 18.5 && resultImc <= 24.9) {
     messageAlert(
       `${name.value}, seu imc é ${resultImc}<br> Peso normal <br> Parabens, você esta no caminho certo`,
     );
-  } else if (resultImc >= 25.0 && 29.9) {
+  } else if (resultImc >= 25.0 && resultImc <= 29.9) {
     messageAlert(
       `${name.value}, seu imc é ${resultImc}<br> Sobre Peso <br> Cuidado, procure emagrecer senão na quiser ver o céu cedo`,
     );
-  } else if (resultImc >= 30.0 && 34.9) {
+  } else if (resultImc >= 30.0 && resultImc <= 34.9) {
     messageAlert(
       `${name.value}, seu imc é ${resultImc}<br> Obsidade Grau | <br> Minha calça jeans favorita está operando hoje em regime de milagre. `,
     );
-  } else if (resultImc >= 35.0 && 39.9) {
+  } else if (resultImc >= 35.0 && resultImc <= 39.9) {
     messageAlert(
       `${name.value}, seu imc é ${resultImc}<br> Obsidade Grau || <br> O único exercício que faço com frequência é o levantamento de garfo com carga pesada.`,
     );
